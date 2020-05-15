@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Erica+One&family=Sarina&family=Squada+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+.font_0 {
+  font-family: "Krona One", sans-serif;
+}
+.font_1 {
+  font-family: "Sarina", cursive;
+}
+.font_2 {
+  font-family: "Squada One", cursive;
+  font-size: 50px;
+}
+html {
+  background-color: #bbddfb;
+}
+#section-1 {
+  padding: 40px 0px;
+  min-height: 800px;
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+}
+#section-2 {
+  min-height: 800px;
+  background-color: #fbe9e7;
+}
+#section-3 {
+  min-height: 800px;
+  background-color: #d7ccc8;
+}
