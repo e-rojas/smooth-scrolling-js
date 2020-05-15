@@ -68,11 +68,15 @@ html {
   min-height: 600px;
   background-color: #434343;
 }
-#the-band {
+#the-band,
+#albums {
   margin: 0px;
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: #434343;
+}
+#records-box {
+  background: linear-gradient(to top, #1e1e1e, transparent 90%);
 }
 /*     --breakpoint-sm: 576px;
     --breakpoint-md: 768px;
