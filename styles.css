@@ -68,7 +68,12 @@ html {
   min-height: 600px;
   background-color: #434343;
 }
-
+#the-band {
+  margin: 0px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #434343;
+}
 /*     --breakpoint-sm: 576px;
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
