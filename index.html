@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Smooth Scrolling</title>
+    <title>Stone Temple Pilots</title>
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -25,76 +25,50 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body data-scrollbar class="container-fluid">
+  <body data-scrollbar class="container-fluid p-0">
     <header>
-      <nav class="navbar navbar-light blue lighten-4 fixed-top">
-      <img style="width: 200px;" src="./images/wpmcreative.png" alt="wpm-logo" >
+      <nav class="navbar navbar-light elegant-color-dark fixed-top">
+        <span class="navbar-brand font_1 text-white">Stone Temple Pilots</span>
       </nav>
     </header>
-    <div id="section-1" class="row pt-5 pb-5 ">
-      <div class="col-lg-6  pt-5  d-flex flex-column align-items-center justify-content-center">
-        <h1 class="font_2">ONLY ON AIRBNB</h1>
-        <h1 class="font_2">UNIQUE FUND</h1>
-        <h1 class="font_2">OAIRBOUND US</h1>
-        <h1 class="font_2">GOOGLE CXO</h1>
-        <h1 class="font_2">SPOTIFY 4 BRANDS</h1>
-      </div>
-      <div class="col-lg-6 text-center pt-5  d-flex flex-column align-items-center justify-content-center">
-        <h1 class="font_2">ESPN BODY 10</h1>
-        <h1 class="font_2">OCTOBER FEST</h1>
-        <h1 class="font_2">SPRINT USA</h1>
-        <h1 class="font_2">APPLE IMAGINE</h1>
-        <h1 class="font_2">DR BEATS</h1>
-      </div>
-    </div>
-    <div id="section-2" class="row">
-      <div class="col-lg-12">
-        <h4 class="font_0">Engineers</h4>
-      </div>
-      <div class="col-md-6 offset-md-3">
-        <!-- Card Regular -->
-        <div style="width: 17rem;" class="card card-cascade m-auto">
-          <!-- Card image -->
-          <div class="view view-cascade overlay">
-            <img
-              class="card-img-top"
-              src="https://mdbootstrap.com/img/Photos/Others/men.jpg"
-              alt="Card image cap"
-            />
-            <a>
-              <div class="mask rgba-white-slight"></div>
-            </a>
-          </div>
-
-          <!-- Card content -->
-          <div class="card-body card-body-cascade text-center">
-            <!-- Title -->
-            <h4 class="card-title"><strong>Billy Coleman</strong></h4>
-            <!-- Subtitle -->
-            <h6 class="font-weight-bold indigo-text py-2">Master DJ</h6>
-            <!-- Text -->
-            <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatibus, ex, recusandae. Facere modi sunt, quod quibusdam.
-            </p>
-
-            <!-- Facebook -->
-            <a type="button" class="btn-floating btn-small btn-fb"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <!-- Twitter -->
-            <a type="button" class="btn-floating btn-small btn-tw"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <!-- Google + -->
-            <a type="button" class="btn-floating btn-small btn-dribbble"
-              ><i class="fab fa-dribbble"></i
-            ></a>
-          </div>
+    <!-- ++++++++++++++ -->
+    <div class="jumbotron">
+      <div class="overlay"></div>
+      <div
+        class="container d-flex align-items-center justify-content-center h-100"
+      >
+        <div class="">
+          <h1 class="font_0">Stone Temple Pilots</h1>
         </div>
       </div>
     </div>
-    </div>
+    <section id="about" class="row pt-5 pb-5">
+      <div class="col-md-6 d-flex flex-column justify-content-center">
+        <img
+          class="img-fluid"
+          src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2015/12/04/10/GettyImages-2249636.jpg?w968"
+          alt=""
+        />
+      </div>
+      <div
+        class="col-md-6 text-white pt-5 pb-5 d-flex flex-column justify-content-center"
+      >
+        <h3 class="font_0">About</h3>
+        <p>
+          It all started as a hobby for two friends who simply wanted to offer
+          New Yorkers some kind of new entertainment option. We started with one
+          small quest room in Brooklyn and it was a real success, so we began to
+          expand. Now we offer a huge variety of quests, some of them occupy
+          entire floors and promise a complete immersion in the plot. We
+          constantly update our quests and offer new stories, so even if you
+          have already come to us many times, we will still have something to
+          surprise you. Come and see!
+        </p>
+      </div>
+    </section>
+    <!-- scroll magic -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <!-- JQuery -->
     <script
       type="text/javascript"
@@ -123,6 +97,16 @@
 
     <script>
       Scrollbar.initAll();
+      // init controller
+      var controller = new ScrollMagic.Controller();
+
+      // create a scene
+      new ScrollMagic.Scene({
+        duration: 100, // the scene should last for a scroll distance of 100px
+        offset: 50, // start this scene after scrolling for 50px
+      })
+        .setPin("#my-sticky-element") // pins the element for the the scene's duration
+        .addTo(controller); // assign the scene to the controller
     </script>
   </body>
 </html>

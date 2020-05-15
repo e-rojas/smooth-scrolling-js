@@ -1,36 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Erica+One&family=Sarina&family=Squada+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Frijole&display=swap");
 .font_0 {
-  font-family: "Krona One", sans-serif;
+  font-family: "Rock Salt", cursive;
 }
 .font_1 {
-  font-family: "Sarina", cursive;
+  font-family: "Frijole", cursive;
+  letter-spacing: 3px;
 }
 .font_2 {
   font-family: "Squada One", cursive;
   font-size: 50px;
 }
 html {
-  background-color: #bbddfb;
+  background-color: #1f1f1f;
 }
 #section-1 {
   padding: 40px 0px;
   min-height: 800px;
-  background-image: linear-gradient(
-    to right top,
-    #d16ba5,
-    #c777b9,
-    #ba83ca,
-    #aa8fd8,
-    #9a9ae1,
-    #8aa7ec,
-    #79b3f4,
-    #69bff8,
-    #52cffe,
-    #41dfff,
-    #46eefa,
-    #5ffbf1
-  );
 }
 #section-2 {
   min-height: 800px;
@@ -39,4 +25,56 @@ html {
 #section-3 {
   min-height: 800px;
   background-color: #d7ccc8;
+}
+#jumbotron {
+  background-image: url("https://images.unsplash.com/photo-1506704888326-3b8834edb40a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60"); /* The image used */
+  margin-top: 50px;
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.jumbotron {
+  margin: 0px;
+  margin-top: 50px;
+  height: 500px;
+  color: white;
+  position: relative;
+  background: url("https://www.lntvglobal.com/media/456081/stonetemplepilots_scottlegato.jpg?anchor=center&mode=crop&width=1060&height=596"); /* The image used */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.jumbotron > .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(28, 28, 28, 0.804);
+  z-index: 1;
+}
+
+.jumbotron > .container {
+  position: relative;
+  z-index: 2;
+}
+#about {
+  margin: 0px;
+  min-height: 600px;
+  background-color: #434343;
+}
+
+/*     --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+     */
+@media only screen and (max-width: 576px) {
+  .font_0 {
+    font-family: "Rock Salt", cursive;
+    font-size: 20px;
+    color: #fff !important;
+  }
 }
